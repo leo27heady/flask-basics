@@ -38,7 +38,7 @@ def get_file():
     print(img.shape)
     # predict = model.predict(img)
     print("request url:", request.url)
-    response = {"class_id": 3}
+    response = {"image_name": f.filename, "class_id": 3}
 
     return jsonify(response)
 
