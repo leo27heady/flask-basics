@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+from PIL import Image
 
 import streamlit as st
 
@@ -30,6 +31,10 @@ def classify_image(uploaded_image, server_url):
 
     r = requests.post(server_url, files=files)
     send_image.close()
+
+    image = Image.open(image_path)
+
+    st.image(image, caption=uploaded_image.name, width=512)
     os.remove(image_path)
 
     predict = json.loads(r.content.decode("utf-8"))

@@ -5,7 +5,8 @@ import json
 from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] = os.path.dirname(__file__)
+# app.config["UPLOAD_FOLDER"] = os.path.dirname(os.path.abspath(__file__))
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 ALLOWED_EXTENSIONS = ["png", "jpg", "jpeg"]
 
@@ -17,8 +18,16 @@ def allowed_file(filename):
     )
 
 
+def delete_image(image_path):
+    os.remove(image_path)
+
+
+app.jinja_env.globals.update(delete_image=delete_image)
+
+
 @app.route("/", methods=["GET", "POST"])
 def upload_file():
+
     if request.method == "POST":
         # check if the post request has the file part
         if "file" not in request.files:
@@ -26,7 +35,8 @@ def upload_file():
         file = request.files["file"]
 
         filename = file.filename
-        file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+        file_path = os.path.join(APP_ROOT, "static/")
+        file_path = "/".join([file_path, filename])
 
         # check filename isn't empty
         if filename == "":
@@ -41,11 +51,13 @@ def upload_file():
 
             r = requests.post(url, files=files)
             send_image.close()
-            os.remove(file_path)
 
             pred = json.loads(r.content.decode("utf-8"))
             return render_template("upload.html") + render_template(
-                "image_class.html", pred=pred
+                "image_class.html",
+                pred=pred,
+                filename=filename,
+                image_path=file_path,
             )
 
     return render_template("upload.html")
