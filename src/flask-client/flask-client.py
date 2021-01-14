@@ -57,11 +57,14 @@ def upload_file():
                 "image_class.html",
                 pred=pred,
                 filename=filename,
-                image_path=file_path,
             )
+            # + render_template(
+            #     "delete.html",
+            #     image_path=file_path
+            # )
 
     return render_template("upload.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="localhost", port=5001)
+    app.run(debug=False, host="localhost", port=5001)
