@@ -13,3 +13,4 @@ flask run --host 127.0.0.1 --port 5001
 
 ![ezgif-2-f46828ae45](https://user-images.githubusercontent.com/45982614/225752518-5dee3104-d3b2-42bd-b2f5-856df0aad1e4.gif)
 ![image_2023-03-23_10-48-49](https://user-images.githubusercontent.com/45982614/227150587-d3e5eda2-c9fb-44fa-9bbd-7107a100858e.png)
+![inbox_2003505_712a3e0b8267c04a3f7326272b044c7b_hist](https://user-images.githubusercontent.com/45982614/227718960-45a33d47-4a84-4249-8d3a-d1c098c27334.png)
