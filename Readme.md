@@ -17,3 +17,12 @@ flask run --host 127.0.0.1 --port 5001
 ![image_2023-03-25_15-23-35](https://user-images.githubusercontent.com/45982614/227719810-0a01a522-cffa-4217-90a1-c2508af7b504.png)
 ![image_2023-03-25_15-23-43](https://user-images.githubusercontent.com/45982614/227719813-a06f80e7-284e-4f11-b12a-ae280c628d4b.png)
 ![image_2023-03-25_15-23-56](https://user-images.githubusercontent.com/45982614/227719817-e8df71fa-2197-43ff-a39a-351b45fce4fb.png)
+
+![photo_2023-05-10_23-00-54 (2)](https://github.com/leo27heady/flask-basics/assets/45982614/b0930ea9-f0b3-4243-8eeb-bf0f6435f310)
+![photo_2023-05-10_23-04-23](https://github.com/leo27heady/flask-basics/assets/45982614/9082fa25-c466-4ca5-8ba2-e58f89de948d)
+![photo_2023-05-10_23-04-16](https://github.com/leo27heady/flask-basics/assets/45982614/a8bce41e-c36b-4ecc-9165-dfa6e9d9a3d4)
+![image_2023-05-10_21-24-23](https://github.com/leo27heady/flask-basics/assets/45982614/483e6cd0-c2c0-493b-a9e1-ae1f27ce4b3e)
+![image_2023-05-10_21-24-56](https://github.com/leo27heady/flask-basics/assets/45982614/39c69607-d42d-4b05-b55c-978ac2c69510)
+![image_2023-05-10_21-29-06](https://github.com/leo27heady/flask-basics/assets/45982614/8d9c1fb2-788e-42fa-a9f3-1cb47d89bbbe)
+![image_2023-05-10_21-32-17](https://github.com/leo27heady/flask-basics/assets/45982614/adc0716e-19d2-4c0d-9f77-05de0ac7de74)
+![image_2023-05-10_21-35-55](https://github.com/leo27heady/flask-basics/assets/45982614/8d1dc896-2503-4434-8b66-6a1f27406694)
